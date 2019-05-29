@@ -1,0 +1,1161 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "goodbye",
+        "text": "Bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye bot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye friend"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "goodbye",
+        "text": "catch you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "gotta go"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodnight"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "goodbye",
+        "text": "i'm off"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later alligator"
+      },
+      {
+        "intent": "goodbye",
+        "text": "we'll speak soon"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hi folks"
+      },
+      {
+        "intent": "greet",
+        "text": "hi Mister"
+      },
+      {
+        "intent": "greet",
+        "text": "hi pal!"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "hello everybody"
+      },
+      {
+        "intent": "greet",
+        "text": "hello is anybody there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello robot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks bot"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks for that"
+      },
+      {
+        "intent": "thanks",
+        "text": "cheers"
+      },
+      {
+        "intent": "thanks",
+        "text": "cheers bro"
+      },
+      {
+        "intent": "thanks",
+        "text": "ok thanks!"
+      },
+      {
+        "intent": "thanks",
+        "text": "perfect thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a bunch for everything"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks for the help"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "thanks",
+        "text": "amazing, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "cool thank you"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "affirm",
+        "text": "for sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes yes yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "definitely"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "Juste",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is Juste"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "Josh",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Josh"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "Lucy",
+            "entity": "name"
+          }
+        ],
+        "text": "I'm Lucy"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "Greg",
+            "entity": "name"
+          }
+        ],
+        "text": "People call me Greg"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "David",
+            "entity": "name"
+          }
+        ],
+        "text": "It's David"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "Amy",
+            "entity": "name"
+          }
+        ],
+        "text": "Usually people call me Amy"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "John",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is John"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "Sam",
+            "entity": "name"
+          }
+        ],
+        "text": "You can call me Sam"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "Linda",
+            "entity": "name"
+          }
+        ],
+        "text": "Please call me Linda"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "Tom",
+            "entity": "name"
+          }
+        ],
+        "text": "Name name is Tom"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Richard",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Richard"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "Tracy",
+            "entity": "name"
+          }
+        ],
+        "text": "I'm Tracy"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Sally",
+            "entity": "name"
+          }
+        ],
+        "text": "Call me Sally"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Philipp",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Philipp"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Charlie",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Charlie"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Charlie",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Charlie"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "Ben",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Ben"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Susan",
+            "entity": "name"
+          }
+        ],
+        "text": "Call me Susan"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "Andrew",
+            "entity": "name"
+          }
+        ],
+        "text": "name is Andrew"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 2,
+            "end": 6,
+            "value": "Lora",
+            "entity": "name"
+          }
+        ],
+        "text": "I Lora"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Stan",
+            "entity": "name"
+          }
+        ],
+        "text": "Stan is my name"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Susan",
+            "entity": "name"
+          }
+        ],
+        "text": "Susan is the name"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Ross",
+            "entity": "name"
+          }
+        ],
+        "text": "Ross is my first name"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Bing",
+            "entity": "name"
+          }
+        ],
+        "text": "Bing is my last name"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "Angelina",
+            "entity": "name"
+          }
+        ],
+        "text": "Few call me as Angelina"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "Julia",
+            "entity": "name"
+          }
+        ],
+        "text": "Some call me Julia"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "Laura",
+            "entity": "name"
+          }
+        ],
+        "text": "Everyone calls me Laura"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "Ganesh",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Ganesh"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Mike",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is Mike"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "Monika",
+            "entity": "name"
+          }
+        ],
+        "text": "just call me Monika"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "Dan",
+            "entity": "name"
+          }
+        ],
+        "text": "Few call Dan"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "Suraj",
+            "entity": "name"
+          }
+        ],
+        "text": "You can always call me Suraj"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "Andrew",
+            "entity": "name"
+          }
+        ],
+        "text": "Some will call me Andrew"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Ajay",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is Ajay"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "Ding",
+            "entity": "name"
+          }
+        ],
+        "text": "I call Ding"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "Partia",
+            "entity": "name"
+          }
+        ],
+        "text": "I'm Partia"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 18,
+            "value": "Leo",
+            "entity": "name"
+          }
+        ],
+        "text": "Please call me Leo"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "Pari",
+            "entity": "name"
+          }
+        ],
+        "text": "name is Pari"
+      },
+      {
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "Sanjay",
+            "entity": "name"
+          }
+        ],
+        "text": "name Sanjay"
+      },
+      {
+        "intent": "joke",
+        "text": "Can you tell me a joke?"
+      },
+      {
+        "intent": "joke",
+        "text": "I would like to hear a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "Tell me a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "A joke please"
+      },
+      {
+        "intent": "joke",
+        "text": "Tell me a joke please"
+      },
+      {
+        "intent": "joke",
+        "text": "I would like to hear a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "I would loke to hear a joke, please"
+      },
+      {
+        "intent": "joke",
+        "text": "Can you tell jokes?"
+      },
+      {
+        "intent": "joke",
+        "text": "Please tell me a joke"
+      },
+      {
+        "intent": "joke",
+        "text": "I need to hear a joke"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "Service quality lower than what is expected"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "the service was very bad"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I have limited [internet] service"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "You have the worst customer services"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I emailed their customer service again and have received no response"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I still have not been transferred to a technical support person"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I have trouble accessing to [Internet]"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I was unable to access the [internet]"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I'm having the worst luck with your customer service"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "poor quality and service"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "Worst customer service"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "bad service"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "Super slow service"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "Terrible service"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I am having a problem with [product name]"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "the [product] is unacceptable"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "It is unusable"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "unused [product]"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "worthless [product]"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "Disappointment"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I am disappointed"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "[The battery] runs down quickly"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "Bad Quality"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "As many people complained, I found this headset's microphone was very weak"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I ordered this product first and was unhappy with it immediately"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "Low Quality"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "The battery life is highly unacceptable"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "The sound quality for the device is unacceptable"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "Poor product"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "This phone might well be the worst I've ever had in any brand"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "Doesn't work"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "I was not impressed by this product"
+      },
+      {
+        "intent": "resource_reclamation",
+        "text": "worthless product"
+      },
+      {
+        "intent": "agent_reclamation",
+        "text": "The support person didn't call me"
+      },
+      {
+        "intent": "agent_reclamation",
+        "text": "the staff are not  friendly"
+      },
+      {
+        "intent": "agent_reclamation",
+        "text": "Technical support was of no help"
+      },
+      {
+        "intent": "agent_reclamation",
+        "text": "not even a \"hello\""
+      },
+      {
+        "intent": "agent_gratitude",
+        "text": "good staff"
+      },
+      {
+        "intent": "agent_gratitude",
+        "text": "the staff are great"
+      },
+      {
+        "intent": "agent_gratitude",
+        "text": "the staff are friendly"
+      },
+      {
+        "intent": "agent_gratitude",
+        "text": "the staff are attentive"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "it is overpriced"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "it was way to expensive"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "I consider this theft"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "You can't beat the price on these"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "it is  far too few for the price"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "for the price you cannot beat it"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "their prices inflate"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "Not good enough for the price"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "What a big waste of time"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "I want my money back"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "Needless to say, I wasted my money"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "What a waste of money and time"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "Thank you for wasting my money"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "Don't waste your money"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "I wasted my little money"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "Waste of money"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "wastefulness"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "worthless"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "time-waster"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "Too bad you have to pay up to [$$$] a month for the service"
+      },
+      {
+        "intent": "price_reclamation",
+        "text": "Not good enough for the price"
+      },
+      {
+        "intent": "recommendation",
+        "text": "Highly unrecommended"
+      },
+      {
+        "intent": "recommendation",
+        "text": "Nothing at all to recommend"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I would not recommend anyone this"
+      },
+      {
+        "intent": "recommendation",
+        "text": "Not recommended"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I really can't recommend it to anyone"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I totally and absolutely recommend this"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I recommend it"
+      },
+      {
+        "intent": "recommendation",
+        "text": "it is is highly recommended"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I definitely recommend it"
+      },
+      {
+        "intent": "recommendation",
+        "text": "will never ever recommended this to anyone"
+      },
+      {
+        "intent": "recommendation",
+        "text": "this is 100% recommended"
+      },
+      {
+        "intent": "recommendation",
+        "text": "Would not recommend to others"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I recommend you this"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I wouldn't recommend buying this product"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I encourage people to give them a try"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I would not recommend this to anyone"
+      },
+      {
+        "intent": "recommendation",
+        "text": "We would recommend these to others"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I would not recommend this item to anyone"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I'd recommend avoiding this product"
+      },
+      {
+        "intent": "recommendation",
+        "text": "don't waste your money and time"
+      },
+      {
+        "intent": "recommendation",
+        "text": "I could not recommend these more"
+      },
+      {
+        "intent": "recommendation",
+        "text": "Don't buy this product"
+      },
+      {
+        "intent": "recommendation",
+        "text": "None of it works, just don't buy it."
+      },
+      {
+        "intent": "recommendation",
+        "text": "Don't make the same mistake that I did and please don't buy this phone."
+      },
+      {
+        "intent": "recommendation",
+        "text": "Please dont waste your money"
+      },
+      {
+        "intent": "recommendation",
+        "text": "Don't waste [$$$] on this one"
+      },
+      {
+        "intent": "evaluation",
+        "text": "10 out of 10 stars"
+      },
+      {
+        "intent": "evaluation",
+        "text": "zero stars"
+      },
+      {
+        "intent": "evaluation",
+        "text": "5 stars for it"
+      },
+      {
+        "intent": "evaluation",
+        "text": "it deserves 5 stars"
+      },
+      {
+        "intent": "evaluation",
+        "text": "its actually rare for me to give a 1 star"
+      },
+      {
+        "intent": "evaluation",
+        "text": "I'm giving it 5 stars now"
+      },
+      {
+        "intent": "evaluation",
+        "text": "it deserves no stars"
+      },
+      {
+        "intent": "evaluation",
+        "text": "I'm going to round up to 4 stars"
+      },
+      {
+        "intent": "evaluation",
+        "text": "I would have given no star"
+      },
+      {
+        "intent": "evaluation",
+        "text": "I give Wirefly 1 star"
+      },
+      {
+        "intent": "evaluation",
+        "text": "Five star"
+      },
+      {
+        "intent": "evaluation",
+        "text": "FIVE STARS to them"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "help"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "help me"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "I need help please"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "Could you help me?"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "Would you help me?"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "Can you end me a hand?"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "Will you help me?"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "Can you help me?"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "Could you do me a favor?"
+      },
+      {
+        "intent": "Asking for help",
+        "text": "Could you give me a hand?"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
