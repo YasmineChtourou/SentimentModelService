@@ -1,3 +1,11 @@
+from nltk.stem import WordNetLemmatizer
+import gensim
+from gensim import parsing
+from gensim.parsing.preprocessing import split_alphanum
+from spellchecker import SpellChecker
+import re
+
+
 def normaliser_word(word):
     slangs_dict = {
     'awsm': 'awesome',
@@ -713,3 +721,36 @@ def replace_word(word):
         word[i] = switcher.get(word[i], word[i])
     word = " ".join(word)
     return word
+
+def transform_text(text):
+        text  = text.lower()
+        text  = replace_word(text)
+        text  = normaliser_word(text)
+        text  = re.sub(r'[^\x00-\x7f]',r' ',text)
+        stops={'at', 'only', 'your', 'yourself', 'a', 'i', 'during', 'off', 'myself', 'so', 'o', 'after', 'under', 
+           'there', 'against', 'over', 'ourselves', 'they', 'me', 'its', 'then', 'above', 'theirs', 'this', 'into', 
+           'from', 'very', 'on', 'yours', 'yourselves', 'herself', 'themselves', 'between', 'if', 'below', 'own', 
+           'and', 'you', 'itself', 'him', 'while', 's', 'who', 'we', 'what', 'by', 'ma', 'further', 'such', 'until',
+           'through', 'too', 'until', 'through', 't', 'too', 'where', 'up', 'my', 'm', 'out', 'down', 're', 'to', 
+           'she', 'd', 'those', 'when', 'it', 'because', 'he', 'in', 'other','each', 'both', 'her', 'but', 'as', 'all', 
+           'his', 'again', 'with', 'once', 'am', 'just', 'should', 'why', 'than', 'any', 'should', 'why', 'than',
+           'more', 'most', 'that', 've', 'will', 'ours', 'our', 'll', 'the', 'y', 'which', 'whom', 'hers', 'an', 'here',
+           'how', 'before', 'about', 'for', 'them', 'these', 'their', 'for', 'them', 'these', 'their', 'or', 'must', 
+           'shall', 'would', 'could' , 'need', 'might'}
+        filtered_words = [word for word in text.split() if word not in stops]
+        filtered_words = gensim.corpora.textcorpus.remove_short(filtered_words, minsize=3)
+        text = " ".join(filtered_words)
+        text = gensim.parsing.preprocessing.strip_punctuation2(text)
+        spell = SpellChecker()
+        misspelled = text.split()
+        wordnet_lemmatizer = WordNetLemmatizer()
+        for i in range(len(misspelled)):
+             word = spell.correction(misspelled[i])
+             misspelled[i]=word
+             misspelled[i] = wordnet_lemmatizer.lemmatize(misspelled[i], pos="v")
+             misspelled[i] = wordnet_lemmatizer.lemmatize(misspelled[i], pos="n")
+        text = " ".join(misspelled)
+        filtered_words = [word for word in text.split() if word not in stops]
+        text = " ".join(filtered_words)
+        text = gensim.corpora.textcorpus.strip_multiple_whitespaces(text)
+        return text
