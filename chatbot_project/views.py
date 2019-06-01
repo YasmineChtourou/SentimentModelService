@@ -24,7 +24,7 @@ def prediction_sentiment(request):
         message=json.loads(request.body)
         ch = preprocessing.transform_text(message["message"])
 
-        interpreter = Interpreter.load(os.path.abspath('current'))
+        interpreter = Interpreter.load(os.path.abspath('rasa_nlu_model'))
         intent=interpreter.parse(ch)
 
         model = pickle.load(open(model_file, 'rb'))
