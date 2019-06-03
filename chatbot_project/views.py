@@ -22,7 +22,7 @@ token_file = os.path.abspath('tokenizer.sav')
 def prediction_sentiment(request):
     try:
         message=json.loads(request.body)
-        ch = preprocessing.transform_text(message["message"])
+        ch = preprocessing.transformText(message["message"])
 
         interpreter = Interpreter.load(os.path.abspath('rasa_nlu_model'))
         intent=interpreter.parse(ch)
@@ -38,7 +38,7 @@ def prediction_sentiment(request):
         if class_pred[0]==0 :
            classe='negative' 
         if class_pred[0]==1 :
-           classe='neutre'
+           classe='neutral'
         if class_pred[0]==2 :
            classe='positive'
 
