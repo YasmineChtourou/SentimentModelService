@@ -7,11 +7,6 @@ This is a web service created with django Framework to consume a sentiment model
    
 ## Install dependencies
 
-To get a development environment running you should :
-
-   * Install virtualenv  :
-
-``` pip install virtualenv ```
 
    * Create a new virtual environment and easily install all libraries by running the following command :
 
