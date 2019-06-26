@@ -2,7 +2,7 @@ from django.http import HttpResponse
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-
+from rest_framework import status 
 import json
 import pickle
 import numpy as np
@@ -12,7 +12,7 @@ from keras.preprocessing.sequence import pad_sequences
 from rasa_nlu.model import Interpreter
 
 from chatbot_project import preprocessing
-
+from keras import backend as K
 MAX_SEQUENCE_LENGTH = 100
 MAX_NB_WORDS = 20000
 model_file = os.path.abspath('model.sav')
@@ -25,7 +25,7 @@ def prediction_sentiment(request):
         ch = preprocessing.transformText(message["message"])
 
         interpreter = Interpreter.load(os.path.abspath('rasa_nlu_model'))
-        intent=interpreter.parse(ch)
+        intent=interpreter.parse(message["message"])
 
         model = pickle.load(open(model_file, 'rb'))
         token = pickle.load(open(token_file, 'rb'))
@@ -34,11 +34,10 @@ def prediction_sentiment(request):
         seqs = pad_sequences(seq, maxlen=MAX_SEQUENCE_LENGTH)
         probability = model.predict(seqs)
         class_pred = model.predict_classes(seqs)
-
         if class_pred[0]==0 :
            classe='negative' 
         if class_pred[0]==1 :
-           classe='neutral'
+           classe='neutre'
         if class_pred[0]==2 :
            classe='positive'
 
