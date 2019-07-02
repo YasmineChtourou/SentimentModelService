@@ -12,11 +12,12 @@ from keras.preprocessing.sequence import pad_sequences
 from rasa_nlu.model import Interpreter
 
 from chatbot_project import preprocessing
-from keras import backend as K
+
+
 MAX_SEQUENCE_LENGTH = 100
 MAX_NB_WORDS = 20000
-model_file = os.path.abspath('model.sav')
-token_file = os.path.abspath('tokenizer.sav')
+model_file = os.path.abspath('sentimentmodelservice/model.sav')
+token_file = os.path.abspath('sentimentmodelservice/tokenizer.sav')
 
 @api_view(["POST"])
 def prediction_sentiment(request):
@@ -24,7 +25,7 @@ def prediction_sentiment(request):
         message=json.loads(request.body)
         ch = preprocessing.transformText(message["message"])
 
-        interpreter = Interpreter.load(os.path.abspath('rasa_nlu_model'))
+        interpreter = Interpreter.load(os.path.abspath('sentimentmodelservice/rasa_nlu_model'))
         intent=interpreter.parse(message["message"])
 
         model = pickle.load(open(model_file, 'rb'))

@@ -10,7 +10,11 @@ This is a web service created with django Framework to consume a sentiment model
 
    * Create a new virtual environment and easily install all libraries by running the following command :
 
-``` conda create  --name venv_name  --file requirements.txt ```
+``` virtualenv venv ```
+
+``` source venv/bin/activate (Under windows run $ venv/Scripts/activate.bat) ```
+
+``` pip install -r requirements.txt ```
 
 In the file requirements.txt you find all necessary dependencies for this project.
 
@@ -24,4 +28,16 @@ In the file requirements.txt you find all necessary dependencies for this projec
 To run this project use this command:
 ```
 python manage.py runserver
+```
+
+
+## Building Docker image and running a container
+
+To build an image from docker file:
+```
+docker build --tag=image_name .
+```
+To run a container from docker image:
+```
+docker run -p 80:80 image_name
 ```
