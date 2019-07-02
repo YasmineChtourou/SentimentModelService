@@ -18,10 +18,6 @@ This is a web service created with django Framework to consume a sentiment model
 
 In the file requirements.txt you find all necessary dependencies for this project.
 
-   * To activate the new environment:
-
-``` source activate  venv_name ```
-
 
 ## Running the tests
  
