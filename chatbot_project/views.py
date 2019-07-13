@@ -42,6 +42,17 @@ def prediction_sentiment(request):
         if class_pred[0]==2 :
            classe='positive'
 
+        #store in database 
+        connection = psycopg2.connect("dbname='sentiment_context' user='postgres' password='Equipe1pfe' host='localhost' port='5433'")
+        mark = connection.cursor()
+        statement_prediction = 'INSERT INTO ' + 'prediction_sentiment_store' + ' (id,text,label,probability) VALUES (%s,%s,%s,%s)'
+        statement_feedback = 'INSERT INTO ' + 'feedback_sentiment_store' + ' (id,text,label) VALUES (%s,%s,%s)'
+        mark.execute(statement_prediction,(message["id"],message["message"],classe,str(probability[0][class_pred[0]])))
+        mark.execute(statement_feedback,(message["id"],message["message"],classe))
+        connection.commit()
+        connection.close()
+        mark.close()
+
         return HttpResponse(json.dumps({"id":message["id"],"message":message["message"],"label":classe,"probability":str(probability[0][class_pred[0]]),"intent":intent['intent']['name']}), content_type='application/json')
     except ValueError as e:
         return Response(e.args[0],status.HTTP_400_BAD_REQUEST)
