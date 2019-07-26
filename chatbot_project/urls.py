@@ -17,5 +17,8 @@ from django.conf.urls import url
 from chatbot_project import views
 
 urlpatterns = [
-    url(r'^prediction_sentiment/',views.prediction_sentiment)
+    url(r'^prediction_sentiment/',views.prediction_sentiment),
+    url(r'^store/',views.store),
+    url(r'^load_model/',views.load_model)
+
 ]

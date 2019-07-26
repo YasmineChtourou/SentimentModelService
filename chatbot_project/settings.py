@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'chatbot_project.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-  'default': {
+     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sentiment_context',                      
         'USER': 'postgres',
@@ -85,7 +85,7 @@ DATABASES = {
     }
 }
 
-
+#5432
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
